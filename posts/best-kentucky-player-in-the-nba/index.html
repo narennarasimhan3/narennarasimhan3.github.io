@@ -326,7 +326,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Win Shares(WS)"</span>,</span>
 <span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Box Plus/Minus(BPM)"</span>,</span>
-<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Shai Gilgeous-Alexander is the most valuable player </span><span class="sc">\n</span><span class="st"> compared to other NBA players from Kentukcy"</span>,</span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Shai is the most valuable player </span><span class="sc">\n</span><span class="st"> compared to other NBA players from Kentucky"</span>,</span>
 <span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"Shai helps his team to win the most games based off how efficient is team is while he is on the court."</span>,</span>
 <span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Sports Reference | By: Naren Narasimhan"</span>) <span class="sc">+</span></span>
 <span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
@@ -463,15 +463,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">NRtg =</span> <span class="st">"Net Rating"</span></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Davis and Gilgeous-Alexander lead in Net Rating and are top 5 in Points"</span>,</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Davis and Shai lead in Net Rating and are top 5 in Points"</span>,</span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Shai, once again, is a leader in offensive and defensive ratings compared to the other Kentucky players."</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>, <span class="at">size =</span> <span class="dv">24</span>),</span>
 <span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
 <span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
 <span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(  </span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">align =</span> <span class="st">"left"</span>, <span class="at">size =</span> <span class="dv">10</span>),</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"subtitle"</span>)</span>
 <span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
 <span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(</span>
 <span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">source_note =</span> <span class="fu">md</span>(<span class="st">"Source: Sports Reference | By: Naren Narasimhan"</span>)</span>
@@ -496,12 +496,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <div class="cell-output-display">
 
-<div id="cbmjqbnjjt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="npsbcnribe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-:where(#cbmjqbnjjt) .gt_table {
+:where(#npsbcnribe) .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -526,7 +526,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-left-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_heading {
+:where(#npsbcnribe) .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -538,7 +538,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_title {
+:where(#npsbcnribe) .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -550,7 +550,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-width: 0;
 }
 
-:where(#cbmjqbnjjt) .gt_subtitle {
+:where(#npsbcnribe) .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -562,13 +562,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-width: 0;
 }
 
-:where(#cbmjqbnjjt) .gt_bottom_border {
+:where(#npsbcnribe) .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_col_headings {
+:where(#npsbcnribe) .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -583,7 +583,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_col_heading {
+:where(#npsbcnribe) .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -603,7 +603,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-:where(#cbmjqbnjjt) .gt_column_spanner_outer {
+:where(#npsbcnribe) .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -615,15 +615,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 4px;
 }
 
-:where(#cbmjqbnjjt) .gt_column_spanner_outer:first-child {
+:where(#npsbcnribe) .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-:where(#cbmjqbnjjt) .gt_column_spanner_outer:last-child {
+:where(#npsbcnribe) .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-:where(#cbmjqbnjjt) .gt_column_spanner {
+:where(#npsbcnribe) .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -635,7 +635,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   width: 100%;
 }
 
-:where(#cbmjqbnjjt) .gt_group_heading {
+:where(#npsbcnribe) .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -660,7 +660,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-:where(#cbmjqbnjjt) .gt_empty_group_heading {
+:where(#npsbcnribe) .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -675,15 +675,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-:where(#cbmjqbnjjt) .gt_from_md > :first-child {
+:where(#npsbcnribe) .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-:where(#cbmjqbnjjt) .gt_from_md > :last-child {
+:where(#npsbcnribe) .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-:where(#cbmjqbnjjt) .gt_row {
+:where(#npsbcnribe) .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -702,7 +702,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-:where(#cbmjqbnjjt) .gt_stub {
+:where(#npsbcnribe) .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -715,7 +715,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#cbmjqbnjjt) .gt_stub_row_group {
+:where(#npsbcnribe) .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -729,11 +729,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: top;
 }
 
-:where(#cbmjqbnjjt) .gt_row_group_first td {
+:where(#npsbcnribe) .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-:where(#cbmjqbnjjt) .gt_summary_row {
+:where(#npsbcnribe) .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -743,16 +743,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#cbmjqbnjjt) .gt_first_summary_row {
+:where(#npsbcnribe) .gt_first_summary_row {
   border-top-style: none;
   border-top-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_first_summary_row.thick {
+:where(#npsbcnribe) .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-:where(#cbmjqbnjjt) .gt_last_summary_row {
+:where(#npsbcnribe) .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -762,7 +762,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_grand_summary_row {
+:where(#npsbcnribe) .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -772,7 +772,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#cbmjqbnjjt) .gt_first_grand_summary_row {
+:where(#npsbcnribe) .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -782,11 +782,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_striped {
+:where(#npsbcnribe) .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-:where(#cbmjqbnjjt) .gt_table_body {
+:where(#npsbcnribe) .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -795,7 +795,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_footnotes {
+:where(#npsbcnribe) .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -809,7 +809,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_footnote {
+:where(#npsbcnribe) .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-left: 4px;
@@ -818,7 +818,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#cbmjqbnjjt) .gt_sourcenotes {
+:where(#npsbcnribe) .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -832,7 +832,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-:where(#cbmjqbnjjt) .gt_sourcenote {
+:where(#npsbcnribe) .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -840,74 +840,74 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-:where(#cbmjqbnjjt) .gt_left {
+:where(#npsbcnribe) .gt_left {
   text-align: left;
 }
 
-:where(#cbmjqbnjjt) .gt_center {
+:where(#npsbcnribe) .gt_center {
   text-align: center;
 }
 
-:where(#cbmjqbnjjt) .gt_right {
+:where(#npsbcnribe) .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-:where(#cbmjqbnjjt) .gt_font_normal {
+:where(#npsbcnribe) .gt_font_normal {
   font-weight: normal;
 }
 
-:where(#cbmjqbnjjt) .gt_font_bold {
+:where(#npsbcnribe) .gt_font_bold {
   font-weight: bold;
 }
 
-:where(#cbmjqbnjjt) .gt_font_italic {
+:where(#npsbcnribe) .gt_font_italic {
   font-style: italic;
 }
 
-:where(#cbmjqbnjjt) .gt_super {
+:where(#npsbcnribe) .gt_super {
   font-size: 65%;
 }
 
-:where(#cbmjqbnjjt) .gt_footnote_marks {
+:where(#npsbcnribe) .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 75%;
   vertical-align: 0.4em;
 }
 
-:where(#cbmjqbnjjt) .gt_asterisk {
+:where(#npsbcnribe) .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-:where(#cbmjqbnjjt) .gt_indent_1 {
+:where(#npsbcnribe) .gt_indent_1 {
   text-indent: 5px;
 }
 
-:where(#cbmjqbnjjt) .gt_indent_2 {
+:where(#npsbcnribe) .gt_indent_2 {
   text-indent: 10px;
 }
 
-:where(#cbmjqbnjjt) .gt_indent_3 {
+:where(#npsbcnribe) .gt_indent_3 {
   text-indent: 15px;
 }
 
-:where(#cbmjqbnjjt) .gt_indent_4 {
+:where(#npsbcnribe) .gt_indent_4 {
   text-indent: 20px;
 }
 
-:where(#cbmjqbnjjt) .gt_indent_5 {
+:where(#npsbcnribe) .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   <thead class="gt_header">
     <tr>
-      <td colspan="5" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: left; font-weight: bold;">Davis and Gilgeous-Alexander lead in Net Rating and are top 5 in Points</td>
+      <td colspan="5" class="gt_heading gt_title gt_font_normal" style="color: #000000; font-size: 24; text-align: left; font-weight: bold;">Davis and Shai lead in Net Rating and are top 5 in Points</td>
     </tr>
     <tr>
-      <td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="">Shai, once again, is a leader in offensive and defensive ratings compared to the other Kentucky players.</td>
+      <td colspan="5" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; font-size: 10; text-align: left;">Shai, once again, is a leader in offensive and defensive ratings compared to the other Kentucky players.</td>
     </tr>
   </thead>
   <thead class="gt_col_headings">
